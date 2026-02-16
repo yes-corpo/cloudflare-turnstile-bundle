@@ -1,0 +1,12 @@
+{
+    "bundles": {
+        "YesCorpo\\Bundle\\CloudflareTurnstileBundle": ["all"]
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
+    },
+    "env": {
+        "TURNSTILE_SITE_KEY": "1x00000000000000000000AA",
+        "TURNSTILE_SECRET_KEY": "1x0000000000000000000000000000000AA"
+    }
+}

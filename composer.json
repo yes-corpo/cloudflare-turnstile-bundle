@@ -1,0 +1,10 @@
+{
+    "name": "yes-corpo/cloudflare-turnstile-bundle",
+    "type": "symfony-bundle",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "YesCorpo\\Bundle\\CloudflareTurnstileBundle\\": "src/"
+        }
+    }
+}
