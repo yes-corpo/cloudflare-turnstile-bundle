@@ -25,10 +25,6 @@ class TurnstileValidator extends ConstraintValidator
             throw new UnexpectedTypeException($constraint, Turnstile::class);
         }
 
-        if (null === $value || '' === $value) {
-            return;
-        }
-
         try {
             $response = $this->client->request(Request::METHOD_POST, self::VERIFY_URL, [
                 'body' => [
