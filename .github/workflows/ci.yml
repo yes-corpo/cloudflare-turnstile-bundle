@@ -12,20 +12,26 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
+                # The PHP version selects the Symfony major: 8.1 → 6.4, 8.2/8.3 → 7.4, 8.4+ → 8.x
                 include:
-                    # Symfony 6.4, minimal versions
+                    # Symfony 6.4.0: old releases trigger Twig deprecations outside the bundle
                     - php: '8.1'
                       dependencies: lowest
-                    # Symfony 6.4, latest versions
                     - php: '8.1'
                       dependencies: highest
-                    # Symfony 7.x, latest versions
+                      phpunit-args: --fail-on-deprecation
                     - php: '8.2'
                       dependencies: highest
+                      phpunit-args: --fail-on-deprecation
                     - php: '8.3'
                       dependencies: highest
+                      phpunit-args: --fail-on-deprecation
                     - php: '8.4'
                       dependencies: highest
+                      phpunit-args: --fail-on-deprecation
+                    - php: '8.5'
+                      dependencies: highest
+                      phpunit-args: --fail-on-deprecation
 
         steps:
             - uses: actions/checkout@v4
@@ -39,4 +45,6 @@ jobs:
               with:
                   dependency-versions: ${{ matrix.dependencies }}
 
-            - run: vendor/bin/phpunit
+            - run: composer show 'symfony/*' | grep -E '^symfony/(form|http-kernel|validator) '
+
+            - run: vendor/bin/phpunit ${{ matrix.phpunit-args }}
