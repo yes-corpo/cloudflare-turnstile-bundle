@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="hi" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="turnstile.invalid">
+                <source>The captcha is invalid.</source>
+                <target>कैप्चा अमान्य है।</target>
+            </trans-unit>
+            <trans-unit id="turnstile.technical_error">
+                <source>The captcha could not be verified, please try again.</source>
+                <target>कैप्चा सत्यापित नहीं हो सका, कृपया फिर से प्रयास करें।</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

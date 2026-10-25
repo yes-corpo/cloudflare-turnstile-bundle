@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="zh-CN" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="turnstile.invalid">
+                <source>The captcha is invalid.</source>
+                <target>验证码无效。</target>
+            </trans-unit>
+            <trans-unit id="turnstile.technical_error">
+                <source>The captcha could not be verified, please try again.</source>
+                <target>无法校验验证码，请重试。</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
