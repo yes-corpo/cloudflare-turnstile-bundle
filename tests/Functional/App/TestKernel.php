@@ -8,6 +8,7 @@ use Symfony\Bundle\TwigBundle\TwigBundle;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 use Symfony\Component\HttpKernel\Kernel;
 use YesCorpo\Bundle\CloudflareTurnstileBundle\CloudflareTurnstileBundle;
+use YesCorpo\Bundle\CloudflareTurnstileBundle\Troll\TrollPicker;
 
 class TestKernel extends Kernel
 {
@@ -24,7 +25,7 @@ class TestKernel extends Kernel
 
     public function getCacheDir(): string
     {
-        return sys_get_temp_dir() . '/cloudflare-turnstile-bundle/' . Kernel::VERSION . '/cache';
+        return sys_get_temp_dir() . '/cloudflare-turnstile-bundle/' . Kernel::VERSION . '/cache/' . $this->environment;
     }
 
     public function getLogDir(): string
@@ -39,6 +40,7 @@ class TestKernel extends Kernel
             'secret' => 'test',
             'form' => true,
             'validation' => true,
+            'assets' => true,
             // No application translations: the messages must come from the bundle
             'translator' => ['default_path' => __DIR__ . '/translations', 'fallbacks' => ['en']],
             'http_client' => ['mock_response_factory' => TurnstileResponseFactory::class],
@@ -67,6 +69,23 @@ class TestKernel extends Kernel
 
         $services = $container->services();
         $services->set(TurnstileResponseFactory::class);
+
+        if ('dev' === $this->environment) {
+            $container->extension('cloudflare_turnstile', [
+                'troll' => [
+                    'enabled' => true,
+                    'probability' => 1,
+                    'disabled_trolls' => ['hesitant_checkbox'],
+                    'assets' => [
+                        'hope_grid' => ['stylesheet' => 'css/hope_grid.css'],
+                        'stuck_loader' => ['script' => false],
+                    ],
+                ],
+            ]);
+
+            $services->set(ProjectTroll::class)->autoconfigure();
+            $services->alias('test.troll_picker', TrollPicker::class)->public();
+        }
 
         // Unused services are removed from the container: expose the ones the tests need
         $services->alias('test.form.factory', 'form.factory')->public();

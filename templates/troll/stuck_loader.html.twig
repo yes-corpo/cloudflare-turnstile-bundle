@@ -1,0 +1,16 @@
+{% extends '@CloudflareTurnstile/troll/_layout.html.twig' %}
+
+{% block body %}
+    <button type="button" class="cf-troll__checkbox" role="checkbox" aria-checked="false" data-cf-troll-box>
+        <span class="cf-troll__tick" aria-hidden="true"></span>
+        <span>{{ 'troll.checkbox.label'|trans({}, 'cloudflare_turnstile') }}</span>
+    </button>
+    <div class="cf-troll__loader" data-cf-troll-loader hidden>
+        <div class="cf-troll__progress" role="progressbar" aria-label="{{ 'troll.stuck_loader.title'|trans({}, 'cloudflare_turnstile') }}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-cf-troll-progress>
+            <div class="cf-troll__progress-bar" data-cf-troll-progress-bar></div>
+        </div>
+        <span class="cf-troll__percent" aria-hidden="true" data-cf-troll-percent>0 %</span>
+    </div>
+{% endblock %}
+
+{% block texts %}data-done="{{ 'troll.stuck_loader.done'|trans({}, 'cloudflare_turnstile') }}"{% endblock %}

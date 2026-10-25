@@ -1,0 +1,10 @@
+{% extends '@CloudflareTurnstile/troll/_layout.html.twig' %}
+
+{% block body %}
+    <button type="button" class="cf-troll__checkbox" role="checkbox" aria-checked="false" data-cf-troll-box>
+        <span class="cf-troll__tick" aria-hidden="true"></span>
+        <span>{{ 'troll.checkbox.label'|trans({}, 'cloudflare_turnstile') }}</span>
+    </button>
+{% endblock %}
+
+{% block texts %}data-suspect="{{ 'troll.hesitant_checkbox.suspect'|trans({}, 'cloudflare_turnstile') }}" data-done="{{ 'troll.hesitant_checkbox.done'|trans({}, 'cloudflare_turnstile') }}"{% endblock %}

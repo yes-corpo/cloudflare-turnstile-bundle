@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="ja" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="troll.label">
+                <source>troll.label</source>
+                <target>認証</target>
+            </trans-unit>
+            <trans-unit id="troll.skip">
+                <source>troll.skip</source>
+                <target>まあ、いいでしょう。先へどうぞ</target>
+            </trans-unit>
+            <trans-unit id="troll.checkbox.label">
+                <source>troll.checkbox.label</source>
+                <target>私はロボットではありません</target>
+            </trans-unit>
+            <trans-unit id="troll.fleeing_checkbox.done">
+                <source>troll.fleeing_checkbox.done</source>
+                <target>まあ、いいでしょう。</target>
+            </trans-unit>
+            <trans-unit id="troll.hesitant_checkbox.suspect">
+                <source>troll.hesitant_checkbox.suspect</source>
+                <target>うーん、ためらいましたね。怪しい。</target>
+            </trans-unit>
+            <trans-unit id="troll.hesitant_checkbox.done">
+                <source>troll.hesitant_checkbox.done</source>
+                <target>まあ、今回はこれで良しとしましょう。</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.title">
+                <source>troll.hope_grid.title</source>
+                <target>希望が写っている画像をすべて選択してください</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.validate">
+                <source>troll.hope_grid.validate</source>
+                <target>確認</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.sunrise">
+                <source>troll.hope_grid.item.sunrise</source>
+                <target>日の出</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.sprout">
+                <source>troll.hope_grid.item.sprout</source>
+                <target>新芽</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.coffee">
+                <source>troll.hope_grid.item.coffee</source>
+                <target>コーヒー</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.snail">
+                <source>troll.hope_grid.item.snail</source>
+                <target>カタツムリ</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.socks">
+                <source>troll.hope_grid.item.socks</source>
+                <target>靴下</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.rainbow">
+                <source>troll.hope_grid.item.rainbow</source>
+                <target>虹</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.cactus">
+                <source>troll.hope_grid.item.cactus</source>
+                <target>サボテン</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.paperclip">
+                <source>troll.hope_grid.item.paperclip</source>
+                <target>クリップ</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.dove">
+                <source>troll.hope_grid.item.dove</source>
+                <target>ハト</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.empty">
+                <source>troll.hope_grid.empty</source>
+                <target>画像がひとつもない？悲観主義者ですね。つまり人間です。</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_1">
+                <source>troll.hope_grid.done_1</source>
+                <target>完璧です。希望は主にクリップの中にありました。</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_2">
+                <source>troll.hope_grid.done_2</source>
+                <target>回答を受け付けました。間違いはありません、あるのは希望だけです。</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_3">
+                <source>troll.hope_grid.done_3</source>
+                <target>素晴らしい。希望を見る目がありますね。</target>
+            </trans-unit>
+            <trans-unit id="troll.stuck_loader.title">
+                <source>troll.stuck_loader.title</source>
+                <target>あなたの人間らしさを確認しています…</target>
+            </trans-unit>
+            <trans-unit id="troll.stuck_loader.done">
+                <source>troll.stuck_loader.done</source>
+                <target>確認できました。あなたは73%人間です。それで十分です。</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.title">
+                <source>troll.reverse_captcha.title</source>
+                <target>あなたがロボットであることを証明してください</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.robot">
+                <source>troll.reverse_captcha.robot</source>
+                <target>私はロボットです</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.robot_reply">
+                <source>troll.reverse_captcha.robot_reply</source>
+                <target>本物のロボットならわざわざ言う必要はありません。</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.human">
+                <source>troll.reverse_captcha.human</source>
+                <target>できません。だから私は人間です</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.done">
+                <source>troll.reverse_captcha.done</source>
+                <target>完璧な論理です。</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="es" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="troll.label">
+                <source>troll.label</source>
+                <target>Verificación</target>
+            </trans-unit>
+            <trans-unit id="troll.skip">
+                <source>troll.skip</source>
+                <target>Bueno, vale, puede pasar</target>
+            </trans-unit>
+            <trans-unit id="troll.checkbox.label">
+                <source>troll.checkbox.label</source>
+                <target>No soy un robot</target>
+            </trans-unit>
+            <trans-unit id="troll.fleeing_checkbox.done">
+                <source>troll.fleeing_checkbox.done</source>
+                <target>Bueno, de acuerdo.</target>
+            </trans-unit>
+            <trans-unit id="troll.hesitant_checkbox.suspect">
+                <source>troll.hesitant_checkbox.suspect</source>
+                <target>Hmm, ha dudado. Sospechoso.</target>
+            </trans-unit>
+            <trans-unit id="troll.hesitant_checkbox.done">
+                <source>troll.hesitant_checkbox.done</source>
+                <target>Bueno, por esta vez vale.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.title">
+                <source>troll.hope_grid.title</source>
+                <target>Seleccione todas las imágenes que contengan esperanza</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.validate">
+                <source>troll.hope_grid.validate</source>
+                <target>Verificar</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.sunrise">
+                <source>troll.hope_grid.item.sunrise</source>
+                <target>Amanecer</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.sprout">
+                <source>troll.hope_grid.item.sprout</source>
+                <target>Brote</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.coffee">
+                <source>troll.hope_grid.item.coffee</source>
+                <target>Taza de café</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.snail">
+                <source>troll.hope_grid.item.snail</source>
+                <target>Caracol</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.socks">
+                <source>troll.hope_grid.item.socks</source>
+                <target>Calcetines</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.rainbow">
+                <source>troll.hope_grid.item.rainbow</source>
+                <target>Arcoíris</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.cactus">
+                <source>troll.hope_grid.item.cactus</source>
+                <target>Cactus</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.paperclip">
+                <source>troll.hope_grid.item.paperclip</source>
+                <target>Clip</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.dove">
+                <source>troll.hope_grid.item.dove</source>
+                <target>Paloma</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.empty">
+                <source>troll.hope_grid.empty</source>
+                <target>¿Ninguna imagen? Un pesimista. O sea, un humano.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_1">
+                <source>troll.hope_grid.done_1</source>
+                <target>Perfecto. La esperanza estaba sobre todo en el clip.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_2">
+                <source>troll.hope_grid.done_2</source>
+                <target>Respuesta aceptada. No había respuesta incorrecta, solo esperanza.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_3">
+                <source>troll.hope_grid.done_3</source>
+                <target>Excelente. Tiene buen ojo para la esperanza.</target>
+            </trans-unit>
+            <trans-unit id="troll.stuck_loader.title">
+                <source>troll.stuck_loader.title</source>
+                <target>Verificando su humanidad…</target>
+            </trans-unit>
+            <trans-unit id="troll.stuck_loader.done">
+                <source>troll.stuck_loader.done</source>
+                <target>Verificación correcta. Es humano al 73 %, con eso basta.</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.title">
+                <source>troll.reverse_captcha.title</source>
+                <target>Demuestre que es un robot</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.robot">
+                <source>troll.reverse_captcha.robot</source>
+                <target>Soy un robot</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.robot_reply">
+                <source>troll.reverse_captcha.robot_reply</source>
+                <target>Un robot de verdad no habría necesitado decirlo.</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.human">
+                <source>troll.reverse_captcha.human</source>
+                <target>No lo consigo, así que soy humano</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.done">
+                <source>troll.reverse_captcha.done</source>
+                <target>Lógica impecable.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

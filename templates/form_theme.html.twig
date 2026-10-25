@@ -5,11 +5,33 @@
         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     {% endif %}
 
-    <div
-        id="{{ id }}"
-        data-sitekey="{{ site_key }}"
-        data-theme="{{ turnstile_theme }}"
-        data-response-field-name="{{ full_name }}"
-        {{ block('attributes') }}
-    ></div>
+    {% set real_widget %}
+        <div
+            id="{{ id }}"
+            data-sitekey="{{ site_key }}"
+            data-theme="{{ turnstile_theme }}"
+            data-response-field-name="{{ full_name }}"
+            {{ block('attributes') }}
+        ></div>
+    {% endset %}
+
+    {% if turnstile_troll %}
+        {% for stylesheet in turnstile_troll.stylesheets %}
+            <link rel="stylesheet" href="{{ asset(stylesheet) }}">
+        {% endfor %}
+        {% for script in turnstile_troll.scripts %}
+            <script src="{{ asset(script) }}" defer></script>
+        {% endfor %}
+        <div
+            class="cf-troll-host"
+            data-cf-troll="{{ turnstile_troll.name }}"
+            data-cf-troll-motion="{{ turnstile_troll.motion ? '1' : '0' }}"
+            data-cf-troll-cooldown="{{ turnstile_troll.cooldown }}"
+        >
+            {{ include(turnstile_troll.template, {name: turnstile_troll.name, theme: turnstile_theme}) }}
+            {{ real_widget }}
+        </div>
+    {% else %}
+        {{ real_widget }}
+    {% endif %}
 {% endblock %}

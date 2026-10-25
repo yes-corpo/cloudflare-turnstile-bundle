@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="ko" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="troll.label">
+                <source>troll.label</source>
+                <target>인증</target>
+            </trans-unit>
+            <trans-unit id="troll.skip">
+                <source>troll.skip</source>
+                <target>뭐, 좋아요. 통과하셔도 됩니다</target>
+            </trans-unit>
+            <trans-unit id="troll.checkbox.label">
+                <source>troll.checkbox.label</source>
+                <target>로봇이 아닙니다</target>
+            </trans-unit>
+            <trans-unit id="troll.fleeing_checkbox.done">
+                <source>troll.fleeing_checkbox.done</source>
+                <target>뭐, 알겠어요.</target>
+            </trans-unit>
+            <trans-unit id="troll.hesitant_checkbox.suspect">
+                <source>troll.hesitant_checkbox.suspect</source>
+                <target>음, 망설이셨네요. 수상한데요.</target>
+            </trans-unit>
+            <trans-unit id="troll.hesitant_checkbox.done">
+                <source>troll.hesitant_checkbox.done</source>
+                <target>좋아요, 이번만 넘어가 드릴게요.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.title">
+                <source>troll.hope_grid.title</source>
+                <target>희망이 담긴 이미지를 모두 선택하세요</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.validate">
+                <source>troll.hope_grid.validate</source>
+                <target>확인</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.sunrise">
+                <source>troll.hope_grid.item.sunrise</source>
+                <target>일출</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.sprout">
+                <source>troll.hope_grid.item.sprout</source>
+                <target>새싹</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.coffee">
+                <source>troll.hope_grid.item.coffee</source>
+                <target>커피 한 잔</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.snail">
+                <source>troll.hope_grid.item.snail</source>
+                <target>달팽이</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.socks">
+                <source>troll.hope_grid.item.socks</source>
+                <target>양말</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.rainbow">
+                <source>troll.hope_grid.item.rainbow</source>
+                <target>무지개</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.cactus">
+                <source>troll.hope_grid.item.cactus</source>
+                <target>선인장</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.paperclip">
+                <source>troll.hope_grid.item.paperclip</source>
+                <target>클립</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.dove">
+                <source>troll.hope_grid.item.dove</source>
+                <target>비둘기</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.empty">
+                <source>troll.hope_grid.empty</source>
+                <target>이미지가 하나도 없나요? 비관주의자시군요. 그러니까 사람이네요.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_1">
+                <source>troll.hope_grid.done_1</source>
+                <target>완벽해요. 희망은 주로 클립에 있었어요.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_2">
+                <source>troll.hope_grid.done_2</source>
+                <target>답변이 접수되었습니다. 틀린 답은 없었어요, 희망만 있었을 뿐.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_3">
+                <source>troll.hope_grid.done_3</source>
+                <target>훌륭해요. 희망을 보는 눈이 있으시네요.</target>
+            </trans-unit>
+            <trans-unit id="troll.stuck_loader.title">
+                <source>troll.stuck_loader.title</source>
+                <target>인간성을 확인하는 중…</target>
+            </trans-unit>
+            <trans-unit id="troll.stuck_loader.done">
+                <source>troll.stuck_loader.done</source>
+                <target>인증 성공. 73% 인간이시네요, 그 정도면 충분해요.</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.title">
+                <source>troll.reverse_captcha.title</source>
+                <target>로봇임을 증명하세요</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.robot">
+                <source>troll.reverse_captcha.robot</source>
+                <target>저는 로봇입니다</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.robot_reply">
+                <source>troll.reverse_captcha.robot_reply</source>
+                <target>진짜 로봇이라면 굳이 말할 필요가 없었을 거예요.</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.human">
+                <source>troll.reverse_captcha.human</source>
+                <target>못 하겠어요, 그러니 저는 사람입니다</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.done">
+                <source>troll.reverse_captcha.done</source>
+                <target>반박할 수 없는 논리네요.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
