@@ -4,6 +4,7 @@ namespace YesCorpo\Bundle\CloudflareTurnstileBundle\Validator;
 
 use Exception;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Exception\UnexpectedTypeException;
@@ -15,6 +16,7 @@ class TurnstileValidator extends ConstraintValidator
 
     public function __construct(
         private readonly HttpClientInterface $client,
+        private readonly RequestStack $requestStack,
         private readonly string $secretKey
     ) {
     }
@@ -30,7 +32,7 @@ class TurnstileValidator extends ConstraintValidator
                 'body' => [
                     'secret' => $this->secretKey,
                     'response' => $value,
-                    // Optionnel : 'remoteip' => $request->getClientIp()
+                    'remoteip' => $this->requestStack->getMainRequest()?->getClientIp(),
                 ],
             ]);
 
