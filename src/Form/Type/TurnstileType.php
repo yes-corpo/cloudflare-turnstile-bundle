@@ -21,6 +21,7 @@ class TurnstileType extends AbstractType
     {
         $view->vars['site_key'] = $this->siteKey;
         $view->vars['turnstile_theme'] = $options['turnstile_theme'];
+        $view->vars['turnstile_load_script'] = $options['turnstile_load_script'];
     }
 
     public function configureOptions(OptionsResolver $resolver): void
@@ -28,10 +29,12 @@ class TurnstileType extends AbstractType
         $resolver->setDefaults([
             'mapped' => false,
             'turnstile_theme' => 'auto',
+            'turnstile_load_script' => true,
             'label' => false,
         ]);
 
         $resolver->setAllowedValues('turnstile_theme', ['auto', 'light', 'dark']);
+        $resolver->setAllowedTypes('turnstile_load_script', 'bool');
 
         $resolver->addNormalizer('constraints', static function (Options $options, array $constraints): array {
             foreach ($constraints as $constraint) {
