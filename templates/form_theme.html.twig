@@ -1,13 +1,15 @@
 {% block turnstile_widget %}
-    {% set class = (attr.class|default('') ~ ' cf-turnstile')|trim %}
+    {% set attr = attr|merge({class: (attr.class|default('') ~ ' cf-turnstile')|trim}) %}
 
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    {% if turnstile_load_script %}
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    {% endif %}
 
     <div
-        class="{{ class }}"
+        id="{{ id }}"
         data-sitekey="{{ site_key }}"
         data-theme="{{ turnstile_theme }}"
         data-response-field-name="{{ full_name }}"
-        {{ block('widget_attributes') }}
+        {{ block('attributes') }}
     ></div>
 {% endblock %}
