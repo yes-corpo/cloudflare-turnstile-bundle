@@ -3,9 +3,13 @@
 namespace YesCorpo\Bundle\CloudflareTurnstileBundle\Tests\Form;
 
 use PHPUnit\Framework\TestCase;
+use Symfony\Bridge\Twig\Extension\AssetExtension;
 use Symfony\Bridge\Twig\Extension\FormExtension;
 use Symfony\Bridge\Twig\Extension\TranslationExtension;
 use Symfony\Bridge\Twig\Form\TwigRendererEngine;
+use Symfony\Component\Asset\Package;
+use Symfony\Component\Asset\Packages;
+use Symfony\Component\Asset\VersionStrategy\EmptyVersionStrategy;
 use Symfony\Component\Form\Extension\Validator\ValidatorExtension;
 use Symfony\Component\Form\FormRenderer;
 use Symfony\Component\Form\Forms;
@@ -25,6 +29,7 @@ class FormThemeTest extends TestCase
         $formLayoutDir = \dirname((new \ReflectionClass(FormExtension::class))->getFileName(), 2) . '/Resources/views/Form';
 
         $this->twig = new Environment(new FilesystemLoader([$formLayoutDir, __DIR__ . '/../../templates']), ['strict_variables' => true]);
+        $this->twig->addExtension(new AssetExtension(new Packages(new Package(new EmptyVersionStrategy()))));
         $this->twig->addExtension(new FormExtension());
         $this->twig->addExtension(new TranslationExtension());
 

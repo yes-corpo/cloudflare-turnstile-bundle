@@ -1,0 +1,15 @@
+{% extends '@CloudflareTurnstile/troll/_layout.html.twig' %}
+
+{% block body %}
+    <p class="cf-troll__title" id="cf-troll-hope-title">{{ 'troll.hope_grid.title'|trans({}, 'cloudflare_turnstile') }}</p>
+    <div class="cf-troll__grid" role="group" aria-labelledby="cf-troll-hope-title">
+        {% for item, emoji in {sunrise: '🌅', sprout: '🌱', coffee: '☕', snail: '🐌', socks: '🧦', rainbow: '🌈', cactus: '🌵', paperclip: '📎', dove: '🕊️'} %}
+            <button type="button" class="cf-troll__cell" aria-pressed="false" aria-label="{{ ('troll.hope_grid.item.' ~ item)|trans({}, 'cloudflare_turnstile') }}" data-cf-troll-cell>
+                <span aria-hidden="true">{{ emoji }}</span>
+            </button>
+        {% endfor %}
+    </div>
+    <button type="button" class="cf-troll__action" data-cf-troll-validate>{{ 'troll.hope_grid.validate'|trans({}, 'cloudflare_turnstile') }}</button>
+{% endblock %}
+
+{% block texts %}data-empty="{{ 'troll.hope_grid.empty'|trans({}, 'cloudflare_turnstile') }}" data-done-1="{{ 'troll.hope_grid.done_1'|trans({}, 'cloudflare_turnstile') }}" data-done-2="{{ 'troll.hope_grid.done_2'|trans({}, 'cloudflare_turnstile') }}" data-done-3="{{ 'troll.hope_grid.done_3'|trans({}, 'cloudflare_turnstile') }}"{% endblock %}
