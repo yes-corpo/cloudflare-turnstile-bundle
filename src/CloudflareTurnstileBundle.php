@@ -43,12 +43,6 @@ class CloudflareTurnstileBundle extends AbstractBundle
         }
 
         $builder->prependExtensionConfig('twig', [
-            'paths' => [
-                __DIR__ . '/../templates' => 'CloudflareTurnstile',
-            ],
-        ]);
-
-        $builder->prependExtensionConfig('twig', [
             'form_themes' => ['@CloudflareTurnstile/form_theme.html.twig'],
         ]);
     }
