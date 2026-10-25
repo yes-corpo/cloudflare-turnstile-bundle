@@ -6,6 +6,7 @@
 |-------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `turnstile_theme`       | `'auto'` | Widget theme: `auto`, `light` or `dark`.                                                                                                                            |
 | `turnstile_load_script` | `true`   | Adds the Turnstile `<script>` tag. Set it to `false` when `api.js` is already loaded, for example with several widgets on the same page.                            |
+| `turnstile_troll`       | `true`   | Set it to `false` to never display a [troll](troll.md) before this widget.                                                                                          |
 | `constraints`           | `[]`     | Additional constraints. The `Turnstile` constraint is always added.                                                                                                 |
 | `attr`                  | `[]`     | HTML attributes of the widget `div`, for example `{'data-size': 'compact'}` or any [Turnstile `data-*` option](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#configurations). |
 
@@ -36,9 +37,14 @@ Arabic (`ar`), Chinese (`zh_CN`), Dutch (`nl`), English (`en`), French (`fr`), G
 Hindi (`hi`), Italian (`it`), Japanese (`ja`), Korean (`ko`), Polish (`pl`), Portuguese (`pt`),
 Russian (`ru`), Spanish (`es`), Turkish (`tr`) and Ukrainian (`uk`).
 
-The messages use the `validators` domain. Override a message, or add a language, in the application
-`translations/` directory, for example `translations/validators.sv.xlf`, with the English message
-as the key.
+| Domain                 | Content                         |
+|------------------------|---------------------------------|
+| `validators`           | Error messages                  |
+| `cloudflare_turnstile` | Texts of the [trolls](troll.md) |
+
+Override a message, or add a language, in the application `translations/` directory, for example
+`translations/validators.sv.xlf`. Use the English message as the key in `validators`, and the
+`troll.*` keys of `translations/cloudflare_turnstile.en.xlf` in `cloudflare_turnstile`.
 
 ## How it works
 
