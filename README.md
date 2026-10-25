@@ -48,6 +48,7 @@ The error is displayed by `{{ form_errors(form) }}`, see [error bubbling](docs/u
 ## Documentation
 
 - [Usage](docs/usage.md): form options, error messages, translations, how the verification works.
+- [Trolls](docs/troll.md): optional humorous fake CAPTCHAs shown before the real challenge.
 
 ## Development
 
