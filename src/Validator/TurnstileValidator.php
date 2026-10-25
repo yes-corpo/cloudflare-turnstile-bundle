@@ -41,7 +41,7 @@ class TurnstileValidator extends ConstraintValidator
                     ->addViolation();
             }
         } catch (Exception) {
-            $this->context->buildViolation('Technical error during captcha verification.')
+            $this->context->buildViolation($constraint->technicalErrorMessage)
                 ->addViolation();
         }
     }
