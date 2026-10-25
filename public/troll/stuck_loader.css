@@ -1,0 +1,27 @@
+.cf-troll__loader {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.cf-troll__progress {
+    flex: 1;
+    height: 6px;
+    overflow: hidden;
+    border-radius: 3px;
+    background: var(--cf-troll-border);
+}
+
+.cf-troll__progress-bar {
+    width: 0;
+    height: 100%;
+    background: currentColor;
+    transition: width .1s linear;
+}
+
+.cf-troll__percent {
+    color: var(--cf-troll-muted);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+}

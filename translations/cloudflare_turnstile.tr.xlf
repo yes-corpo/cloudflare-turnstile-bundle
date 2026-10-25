@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="tr" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="troll.label">
+                <source>troll.label</source>
+                <target>Doğrulama</target>
+            </trans-unit>
+            <trans-unit id="troll.skip">
+                <source>troll.skip</source>
+                <target>Peki, tamam, geçebilirsiniz</target>
+            </trans-unit>
+            <trans-unit id="troll.checkbox.label">
+                <source>troll.checkbox.label</source>
+                <target>Ben robot değilim</target>
+            </trans-unit>
+            <trans-unit id="troll.fleeing_checkbox.done">
+                <source>troll.fleeing_checkbox.done</source>
+                <target>Peki, tamam.</target>
+            </trans-unit>
+            <trans-unit id="troll.hesitant_checkbox.suspect">
+                <source>troll.hesitant_checkbox.suspect</source>
+                <target>Hmm, tereddüt ettiniz. Şüpheli.</target>
+            </trans-unit>
+            <trans-unit id="troll.hesitant_checkbox.done">
+                <source>troll.hesitant_checkbox.done</source>
+                <target>Peki, bu seferlik olur.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.title">
+                <source>troll.hope_grid.title</source>
+                <target>Umut içeren tüm görselleri seçin</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.validate">
+                <source>troll.hope_grid.validate</source>
+                <target>Doğrula</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.sunrise">
+                <source>troll.hope_grid.item.sunrise</source>
+                <target>Gün doğumu</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.sprout">
+                <source>troll.hope_grid.item.sprout</source>
+                <target>Filiz</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.coffee">
+                <source>troll.hope_grid.item.coffee</source>
+                <target>Bir fincan kahve</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.snail">
+                <source>troll.hope_grid.item.snail</source>
+                <target>Salyangoz</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.socks">
+                <source>troll.hope_grid.item.socks</source>
+                <target>Çoraplar</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.rainbow">
+                <source>troll.hope_grid.item.rainbow</source>
+                <target>Gökkuşağı</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.cactus">
+                <source>troll.hope_grid.item.cactus</source>
+                <target>Kaktüs</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.paperclip">
+                <source>troll.hope_grid.item.paperclip</source>
+                <target>Ataş</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.item.dove">
+                <source>troll.hope_grid.item.dove</source>
+                <target>Güvercin</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.empty">
+                <source>troll.hope_grid.empty</source>
+                <target>Hiç görsel yok mu? Bir karamsar. Demek ki bir insan.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_1">
+                <source>troll.hope_grid.done_1</source>
+                <target>Mükemmel. Umut daha çok ataştaydı.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_2">
+                <source>troll.hope_grid.done_2</source>
+                <target>Yanıt kabul edildi. Yanlış yanıt yoktu, sadece umut vardı.</target>
+            </trans-unit>
+            <trans-unit id="troll.hope_grid.done_3">
+                <source>troll.hope_grid.done_3</source>
+                <target>Harika. Umudu görmeyi biliyorsunuz.</target>
+            </trans-unit>
+            <trans-unit id="troll.stuck_loader.title">
+                <source>troll.stuck_loader.title</source>
+                <target>İnsanlığınız doğrulanıyor…</target>
+            </trans-unit>
+            <trans-unit id="troll.stuck_loader.done">
+                <source>troll.stuck_loader.done</source>
+                <target>Doğrulama başarılı. %73 insansınız, bu kadarı yeter.</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.title">
+                <source>troll.reverse_captcha.title</source>
+                <target>Robot olduğunuzu kanıtlayın</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.robot">
+                <source>troll.reverse_captcha.robot</source>
+                <target>Ben bir robotum</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.robot_reply">
+                <source>troll.reverse_captcha.robot_reply</source>
+                <target>Gerçek bir robotun bunu söylemesine gerek olmazdı.</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.human">
+                <source>troll.reverse_captcha.human</source>
+                <target>Başaramıyorum, demek ki insanım</target>
+            </trans-unit>
+            <trans-unit id="troll.reverse_captcha.done">
+                <source>troll.reverse_captcha.done</source>
+                <target>Kusursuz mantık.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

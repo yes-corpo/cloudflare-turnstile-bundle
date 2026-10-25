@@ -1,0 +1,18 @@
+<div
+    class="cf-troll cf-troll--{{ name }}"
+    data-cf-troll-root
+    data-cf-troll-theme="{{ theme }}"
+    role="group"
+    aria-label="{{ 'troll.label'|trans({}, 'cloudflare_turnstile') }}"
+    hidden
+>
+    <div class="cf-troll__body">
+        {% block body %}{% endblock %}
+    </div>
+
+    <p class="cf-troll__message" data-cf-troll-message aria-live="polite"></p>
+
+    <button type="button" class="cf-troll__skip" data-cf-troll-skip hidden>{{ 'troll.skip'|trans({}, 'cloudflare_turnstile') }}</button>
+
+    <div hidden data-cf-troll-texts {% block texts %}{% endblock %}></div>
+</div>

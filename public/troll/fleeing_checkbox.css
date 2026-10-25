@@ -1,0 +1,11 @@
+.cf-troll__area {
+    position: relative;
+    height: 44px;
+}
+
+.cf-troll__area .cf-troll__checkbox {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    transition: left .15s ease-out, top .15s ease-out;
+}

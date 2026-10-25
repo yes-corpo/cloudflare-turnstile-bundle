@@ -1,0 +1,11 @@
+{% extends '@CloudflareTurnstile/troll/_layout.html.twig' %}
+
+{% block body %}
+    <p class="cf-troll__title">{{ 'troll.reverse_captcha.title'|trans({}, 'cloudflare_turnstile') }}</p>
+    <div class="cf-troll__actions">
+        <button type="button" class="cf-troll__action cf-troll__action--secondary" data-cf-troll-robot>{{ 'troll.reverse_captcha.robot'|trans({}, 'cloudflare_turnstile') }}</button>
+        <button type="button" class="cf-troll__action" data-cf-troll-human>{{ 'troll.reverse_captcha.human'|trans({}, 'cloudflare_turnstile') }}</button>
+    </div>
+{% endblock %}
+
+{% block texts %}data-robot="{{ 'troll.reverse_captcha.robot_reply'|trans({}, 'cloudflare_turnstile') }}" data-done="{{ 'troll.reverse_captcha.done'|trans({}, 'cloudflare_turnstile') }}"{% endblock %}

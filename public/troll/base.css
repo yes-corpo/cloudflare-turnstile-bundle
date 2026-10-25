@@ -1,0 +1,117 @@
+.cf-troll-host {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* visibility, not display: Turnstile must keep initialising */
+.cf-troll-host.cf-troll-active > .cf-turnstile {
+    position: absolute;
+    inset: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.cf-troll {
+    --cf-troll-border: color-mix(in srgb, currentColor 22%, transparent);
+    --cf-troll-surface: color-mix(in srgb, currentColor 4%, transparent);
+    --cf-troll-muted: color-mix(in srgb, currentColor 65%, transparent);
+
+    box-sizing: border-box;
+    width: 300px;
+    max-width: 100%;
+    min-height: 65px;
+    padding: 10px 12px;
+    border: 1px solid var(--cf-troll-border);
+    border-radius: 6px;
+    background: var(--cf-troll-surface);
+    color: inherit;
+    font: inherit;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cf-troll[hidden],
+.cf-troll [hidden] {
+    display: none;
+}
+
+.cf-troll button {
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+.cf-troll :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+.cf-troll__title {
+    margin: 0 0 8px;
+}
+
+.cf-troll__message {
+    margin: 6px 0 0;
+    color: var(--cf-troll-muted);
+    font-size: 13px;
+}
+
+.cf-troll__message:empty {
+    display: none;
+}
+
+.cf-troll__skip {
+    display: block;
+    margin: 6px 0 0 auto;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--cf-troll-muted);
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.cf-troll__checkbox {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    padding: 4px 0;
+    border: 0;
+    background: none;
+}
+
+.cf-troll__tick {
+    display: inline-grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--cf-troll-border);
+    border-radius: 4px;
+    background: Canvas;
+}
+
+.cf-troll__checkbox[aria-checked="true"] .cf-troll__tick::after {
+    content: "\2713";
+    font-weight: 700;
+}
+
+.cf-troll__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.cf-troll__action {
+    padding: 4px 10px;
+    border: 1px solid var(--cf-troll-border);
+    border-radius: 4px;
+    background: var(--cf-troll-surface);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cf-troll * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
