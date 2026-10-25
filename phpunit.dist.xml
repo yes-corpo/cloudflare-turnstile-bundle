@@ -4,6 +4,8 @@
          bootstrap="vendor/autoload.php"
          cacheDirectory=".phpunit.cache"
          colors="true"
+         displayDetailsOnTestsThatTriggerDeprecations="true"
+         failOnPhpunitDeprecation="true"
          failOnRisky="true"
          failOnWarning="true">
     <testsuites>
@@ -11,7 +13,8 @@
             <directory>tests</directory>
         </testsuite>
     </testsuites>
-    <source>
+    <!-- Symfony silences its deprecations with @trigger_error(): report them anyway -->
+    <source ignoreSuppressionOfDeprecations="true">
         <include>
             <directory>src</directory>
         </include>

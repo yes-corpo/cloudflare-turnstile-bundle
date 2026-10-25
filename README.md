@@ -4,7 +4,11 @@ Protects Symfony forms with [Cloudflare Turnstile](https://developers.cloudflare
 a `TurnstileType` form type renders the widget, and a `Turnstile` constraint verifies the token
 with Cloudflare when the form is submitted.
 
-Requires PHP 8.1+ and Symfony 6.4 or 7.x.
+| Symfony | PHP  |
+|---------|------|
+| 6.4     | 8.1+ |
+| 7.4     | 8.2+ |
+| 8.x     | 8.4+ |
 
 ## Installation
 

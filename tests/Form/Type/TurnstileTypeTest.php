@@ -2,23 +2,28 @@
 
 namespace YesCorpo\Bundle\CloudflareTurnstileBundle\Tests\Form\Type;
 
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Form\Extension\Validator\ValidatorExtension;
+use Symfony\Component\Form\FormFactoryInterface;
+use Symfony\Component\Form\Forms;
 use Symfony\Component\Form\PreloadedExtension;
-use Symfony\Component\Form\Test\TypeTestCase;
 use Symfony\Component\OptionsResolver\Exception\InvalidOptionsException;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Validation;
 use YesCorpo\Bundle\CloudflareTurnstileBundle\Form\Type\TurnstileType;
 use YesCorpo\Bundle\CloudflareTurnstileBundle\Validator\Turnstile;
 
-class TurnstileTypeTest extends TypeTestCase
+// Not a TypeTestCase: its EventDispatcher mock without expectations triggers notices on PHPUnit 12
+class TurnstileTypeTest extends TestCase
 {
-    protected function getExtensions(): array
+    private FormFactoryInterface $factory;
+
+    protected function setUp(): void
     {
-        return [
-            new PreloadedExtension([new TurnstileType('site-key')], []),
-            new ValidatorExtension(Validation::createValidator()),
-        ];
+        $this->factory = Forms::createFormFactoryBuilder()
+            ->addExtension(new PreloadedExtension([new TurnstileType('site-key')], []))
+            ->addExtension(new ValidatorExtension(Validation::createValidator()))
+            ->getFormFactory();
     }
 
     public function testTurnstileConstraintIsAddedByDefault(): void
