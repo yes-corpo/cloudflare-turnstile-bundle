@@ -12,6 +12,27 @@ with Cloudflare when the form is submitted.
 
 ## Installation
 
+The bundle has no Flex recipe and both keys are required, so create the configuration first,
+otherwise the `cache:clear` run by `composer require` fails:
+
+```yaml
+# config/packages/cloudflare_turnstile.yaml
+cloudflare_turnstile:
+    site_key: '%env(TURNSTILE_SITE_KEY)%'
+    secret_key: '%env(TURNSTILE_SECRET_KEY)%'
+```
+
+```dotenv
+# .env
+TURNSTILE_SITE_KEY=
+TURNSTILE_SECRET_KEY=
+```
+
+In development and tests, use the
+[Cloudflare test keys](https://developers.cloudflare.com/turnstile/troubleshooting/testing/).
+
+Then install the bundle:
+
 ```bash
 composer require yes-corpo/cloudflare-turnstile-bundle
 ```
@@ -21,18 +42,6 @@ Without Symfony Flex, enable the bundle in `config/bundles.php`:
 ```php
 YesCorpo\Bundle\CloudflareTurnstileBundle\CloudflareTurnstileBundle::class => ['all' => true],
 ```
-
-## Configuration
-
-```yaml
-# config/packages/cloudflare_turnstile.yaml
-cloudflare_turnstile:
-    site_key: '%env(TURNSTILE_SITE_KEY)%'
-    secret_key: '%env(TURNSTILE_SECRET_KEY)%'
-```
-
-In development and tests, use the
-[Cloudflare test keys](https://developers.cloudflare.com/turnstile/troubleshooting/testing/).
 
 ## Usage
 

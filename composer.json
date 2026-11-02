@@ -1,7 +1,8 @@
 {
     "name": "yes-corpo/cloudflare-turnstile-bundle",
+    "description": "Cloudflare Turnstile captcha for Symfony forms",
     "type": "symfony-bundle",
-    "license": "proprietary",
+    "license": "MIT",
     "require": {
         "php": "^8.1",
         "symfony/asset": "^6.4 || ^7.4 || ^8.0",
